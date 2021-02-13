@@ -6,13 +6,12 @@
 
 ###########################################
 
-# Replace this string with the location of your root Valheim folder (you likely just need to change the username)
-$path = "C:\Users\Connor\AppData\LocalLow\IronGate\Valheim"
-# This sets the backup location
-$backupLocation = "C:\users\public\documents\ValheimBackups"
+# Only update this string with the location of your root Valheim folder if it is no longer in the default location
+$path = "~\AppData\LocalLow\IronGate\Valheim"
+# Default backup location is "My Documents"\ValheimBackups
+$backupLocation = [Environment]::GetFolderPath("MyDocuments") + "\ValheimBackups"
 
-if ((Test-Path -Path $backupLocation) -eq $false)
-{
+if ((Test-Path -Path $backupLocation) -eq $false) {
     mkdir $backupLocation    
 }
 
