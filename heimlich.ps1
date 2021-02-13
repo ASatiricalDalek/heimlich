@@ -1,4 +1,4 @@
-# HEIMLICH - Up-chuck your your Valhiem world into a safe repository
+# HEIMLICH - Up-chuck your your Valheim world into a safe repository
 # By Connor McNamara - 2/12/2021
 
 # Best used in conjunction with Task Scheduler for automated backups
